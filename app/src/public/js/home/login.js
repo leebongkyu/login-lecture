@@ -1,4 +1,12 @@
 "use strict";
 
-console.log("hello");
-console.log("bye");
+$(function() {
+    $("#btnLogin").on("click", function(){
+        const req = {
+            id: $("#id").val(),
+            psword: $("#psword").val(),
+        };
+
+        console.log(req);
+    });
+});
